@@ -1,0 +1,215 @@
+ /* --------------- базовые настройки ---------*/
+html {
+	min-height:100%;
+}
+	body {
+		margin: 0;
+		padding: 0;
+		color: #000;
+		background: #fff;
+		text-align: left;
+		font-family: 'Open Sans', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 23px;
+		min-height: 100%;
+	}
+	a, a:visited { /* порядок правил для ссылок имеет значение */
+		color: blue;
+		text-decoration: none;
+	}
+	a:hover {
+		color: green;
+		text-decoration: none;
+	}
+	a:focus, a:active {
+		color: orange;
+		text-decoration: none;
+	}
+	img{
+		max-width:100%;
+		height: auto;
+	}
+	.centerfix{
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+/* --------------- HEADER ---------*/
+header{
+	background-image: url("../img/header_sh.jpg");
+	color: #fff;
+	position: relative;
+	padding: 70px 0 190px;
+}
+	.header-logo{
+		margin-left: 40%;
+	}
+	.header-promo{
+		padding-top: 10px;
+		padding-left: 25px;
+		font-size: 49.35px;
+		line-height: 62px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	.zipcode-block{
+		position: absolute;
+		left: 37.2%;
+		bottom: -14.5%;
+		width: 334px;
+		padding: 25px 0;
+		font-size: 15.35px;
+		background-color: #fff;
+		color: #938e8e;
+	}
+		.zipcode-block-form{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+			.zipcode-block-form input{
+				width: 100%;
+				margin: 5px 35px 27px 33px;
+				padding: 8px 15px 9px 14px;
+				-webkit-box-sizing: border-box;
+				        box-sizing: border-box;
+				border: 1px solid #e5e5e5;
+				-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.09);
+				        box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.09);
+			}
+			.zipcode-block-form input::-webkit-input-placeholder {
+				font-size: 15.35px;
+				line-height: 23px;
+				color: #b4adad;
+			}
+			.zipcode-block-form input:-moz-placeholder {
+				font-size: 15.35px;
+				line-height: 23px;
+				color: #b4adad;
+			}
+			.zipcode-block-form p{
+				margin: 24px 50px 28px 25px;
+				text-align: center;
+			}
+			.zipcode-block-form button{
+				color: #fff;
+				background-color: #227dd3;
+				padding: 0 25px 0 35px;
+				text-transform: uppercase;
+				font-size: 25.65px;
+				line-height: 40px;
+				font-weight: 600;
+				border: 0;
+			}
+.resources{
+	padding: 170px 0 105px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+	.resources-item{
+		width: 32%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+		.resources-item:first-child{
+			margin-right: 60px;
+		}
+		.resources-item-description{
+			padding-left: 30px;
+		}
+			.resources-item-description h3{
+				margin: 0;
+				font-size: 27.35px;
+				line-height: 42px;
+				font-weight: 600;
+			}
+			.resources-item-description p{
+				margin: 0;
+				line-height: 23px;
+			}
+.content{
+	background-color: #5fc18b;
+	color: #fff;
+}
+	.tablets{
+		position: relative;
+		z-index: 0;
+	}
+		.tablets img{
+			position: absolute;
+			top: 15%;
+			left: 16.2%;
+			z-index: -1;
+		}
+		.tablets .content-description{
+			padding: 17.3% 24% 0 24.5%;
+		}
+			.tablets .content-description h3{
+				font-size: 39.35px;
+				line-height: 62px;
+				text-align: center;
+				margin: 0;
+				margin-top: 40px;
+				margin-bottom: 24px;
+			}
+			.tablets .content-description p:last-child{
+				margin-top: 48px;
+			}
+	.notebook{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		background-color: #44a36f;
+		-webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+		        clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+	}
+		.notebook img{
+			padding-top: 24.8%;
+		}
+		.notebook .content-description{
+			padding: 22.4% 14% 0 5%;
+		}
+		.notebook .content-description h3{
+			font-size: 39.35px;
+			line-height: 62px;
+			margin: 0;
+		}
+		.notebook .content-description-btn{
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			margin-top: 25px;
+			padding: 0 35px;
+			font-size: 27.35px;
+			line-height: 52px;
+			font-weight: 600;
+			border: 3px solid #fff;
+			border-radius: 10px;
+			color: #fff;
+		}
+.map{
+	position: relative;
+}
+	.contact{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 430px;
+		height: 430px;
+		background-color: #fff;
+	  border-radius: 50%;
+	  opacity: 0.851;
+	}
