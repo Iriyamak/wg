@@ -59,14 +59,14 @@
   </div>
   <div class="map">
     <img src="img/map.jpg" alt="map">
-    <div class="contact">
-      <form action="#" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="email address">
-        <textarea name="message" rows="8" cols="8" placeholder="message"></textarea>
-        <button type="submit">&#118;</button>
-      </form>
-    </div>
+    <div class="contact-container">  
+  	<form id="contact" action="" method="post">
+      		<input placeholder="Your name" type="text" tabindex="1" required autofocus>
+         	<input placeholder="Your Email Address" type="email" tabindex="2" required>
+          	<textarea placeholder="Type your Message Here...." tabindex="3" required></textarea>
+         	<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" tabindex="4">Su</button>
+	</form>
+   </div>
   </div>
 </main>
 <footer class="centerfix">
